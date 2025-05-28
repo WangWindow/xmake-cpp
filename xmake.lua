@@ -1,0 +1,9 @@
+add_rules("mode.debug", "mode.release")
+set_toolchains("clang")
+
+target("xmake-cpp")
+    set_kind("binary")
+    set_languages("c++23")
+    set_policy("build.c++.modules", true)
+    add_files("src/*.cpp", "src/*.ixx")
+    set_runtimes("c++_shared")
