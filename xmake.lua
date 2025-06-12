@@ -6,6 +6,5 @@ set_policy("build.c++.modules", true)
 
 target("xmake-cpp")
     set_kind("binary")
-    set_languages("c++23")
     add_files("src/*.cpp", "src/*.ixx")
     set_runtimes("c++_shared")
