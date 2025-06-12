@@ -1,10 +1,10 @@
 add_rules("mode.debug", "mode.release")
 add_rules("plugin.compile_commands.autoupdate", {outputdir = "build" })
 set_toolchains("clang")
+set_policy("build.c++.modules", true)
 
 target("xmake-cpp")
     set_kind("binary")
     set_languages("c++23")
-    set_policy("build.c++.modules", true)
     add_files("src/*.cpp", "src/*.ixx")
     set_runtimes("c++_shared")
