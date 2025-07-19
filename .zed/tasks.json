@@ -1,20 +1,12 @@
 [
   {
     "label": "xmake build (debug)",
-    "command": "sh",
-    "args": [
-      "-c",
-      "xmake f -m debug && xmake build"
-    ],
+    "command": "xmake f -m debug && xmake build",
     "cwd": "$ZED_WORKTREE_ROOT"
   },
   {
     "label": "xmake build (release)",
-    "command": "sh",
-    "args": [
-      "-c",
-      "xmake f -m release && xmake build"
-    ],
+    "command": "xmake f -m release && xmake build",
     "cwd": "$ZED_WORKTREE_ROOT"
   },
   {
